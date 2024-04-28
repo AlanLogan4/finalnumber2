@@ -1,0 +1,47 @@
+body{
+  font-size: 40px;
+}
+form {
+  border: 1px solid black;
+  width: 600px;
+  margin: auto;
+  margin-top: 80px;
+  background-color: rgb(149, 149, 182);
+}
+label{
+    margin-left: 10px;
+    margin-top: 30px;
+    display: block;
+}
+input{
+  background-color: rgb(192, 192, 198);
+    justify-items: center;
+    margin-left: 10px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+#submit-button{
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.product {
+  border: 1px solid black;
+  height: 20%;
+  img {
+    border: 10px solid black;
+    max-width: 200px;
+  }
+  height: fit-content;
+  .amount{
+    font-size: 30px;
+  }
+}
+
+.pruchaseCard{
+  border: solid black 1px;
+}
+#navigation{
+
+}

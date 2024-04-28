@@ -1,0 +1,83 @@
+#Product-Container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: auto;
+  grid-area: products;
+  min-width: fit-content;
+}
+#cart {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: auto;
+  grid-area: cart;
+  min-width: fit-content;
+  border-left: 10px solid rgb(68, 67, 67);
+}
+#AdminAccess {
+  grid-area: adminAccess;
+}
+#navBar {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  grid-area: navBar;
+  div {
+    display: inline-block;
+    margin: 10px;
+  }
+  button {
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    transition: all 1s;
+  }
+  button:hover{
+    background-color: grey;
+    transform: scale(120%);
+  }
+  background-color: rgb(10, 10, 94);
+}
+#filter {
+  padding: 15px;
+  display: block;
+  grid-area: filter;
+}
+body {
+  margin: 0;
+  grid-template-columns: 50%;
+  grid-template-rows: 15% 5% 10% 70%;
+  max-height: 100vh;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "navBar navBar"
+    "filter cart"
+    "tags cart"
+    "products cart";
+}
+.product {
+  border: 1px solid black;
+  height: 20%;
+  img {
+    border: 10px solid black;
+    max-width: 200px;
+  }
+  height: fit-content;
+}
+
+.hoverclass {
+  background: rgb(65, 69, 65);
+}
+#storeName {
+  display: inline-block;
+
+  width: 200px;
+  height: 50px;
+
+}
